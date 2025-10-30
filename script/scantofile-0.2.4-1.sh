@@ -54,9 +54,9 @@
   #only convert when no back pages are being scanned:
   (
     if [ "$(which usleep 2>/dev/null)" != '' ]; then
-      usleep 120000000
+      usleep 1000000
     else
-      sleep 120
+      sleep 1
     fi
 
     (

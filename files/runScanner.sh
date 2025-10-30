@@ -49,7 +49,7 @@ cat /opt/brother/scanner/brscan-skey/brscan-skey.config
 echo "-----"
 
 echo "starting scanner drivers..."
-su - "$NAME" -c "/usr/bin/brsaneconfig4 -a name=$NAME model=$MODEL ip=$IPADDRESS"
+su - "$NAME" -c "/usr/bin/brsaneconfig5 -a name=$NAME model=$MODEL ip=$IPADDRESS"
 su - "$NAME" -c "/usr/bin/brscan-skey"
 echo "-----"
 
